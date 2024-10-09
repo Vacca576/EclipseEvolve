@@ -4,16 +4,18 @@
 # EclipseEvolve for EXILED
 
 ## Features:
-- Sends a custom welcome message to verified players
-- Prevents SCP players from activating generators to avoid team trolling
-- Provides helpful hints during warhead activation based on player roles
-- Tracks and displays the number of kills for players
+- Sends a custom welcome message to players when they are verified
+- Prevents SCPs from activating generators to avoid harming teammates
+- Provides hints based on player role during generator and warhead activation
+- Displays kill count for players who get kills
 
 ### Exiled Version: 8.9.11
 ### Config:
 
 ```yaml
 EclipseEvolve:
+  is_enabled: true
+  debug: false
   module_welcome_message: true
   welcome_message: "<color=lime>Welcome to the server!</color>"
   module_anti_trolling_team: true
